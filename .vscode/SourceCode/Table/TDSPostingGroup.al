@@ -1,4 +1,4 @@
-table 50100 "TDSpostinggroup"
+table 50400 "TDSpostinggroup"
 {
     DataClassification = ToBeClassified;
 

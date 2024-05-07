@@ -1,9 +1,10 @@
-page 50100 "TDSPostingrouplist"
+page 50400 "TDSPostingrouplist"
 {
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = TDSpostinggroup;
+    CardPageId = TDSPostingGroupCard;
 
     layout
     {

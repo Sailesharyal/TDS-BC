@@ -1,4 +1,4 @@
-page 50102 "TDSPostingGroupCard"
+page 50401 "TDSPostingGroupCard"
 {
     PageType = Card;
     ApplicationArea = All;
