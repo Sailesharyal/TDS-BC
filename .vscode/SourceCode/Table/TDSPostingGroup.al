@@ -8,6 +8,7 @@ table 50400 "TDSpostinggroup"
         {
             DataClassification = ToBeClassified;
 
+
         }
         field(2; Name; text[30])
         {

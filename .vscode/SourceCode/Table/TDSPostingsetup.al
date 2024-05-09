@@ -7,11 +7,26 @@ table 50403 "TDSPostSetup"
         field(1; Code; Code[20])
         {
             DataClassification = ToBeClassified;
+            TableRelation = TDSpostinggroup;
+            // trigger OnValidate()
+            // var
+            // //     TDSGroup: Record TDSpostinggroup;
+            // // begin
+            // //         TDSGroup.Reset();
+            // //     if Page.RunModal(Page::TDSPostingGroupCard,TDSGroup)
+            // //         TDSGroup.Name := Rec.Name
+            // // end;
+
+
+
 
         }
         field(2; Name; Text[30])
         {
-            DataClassification = ToBeClassified;
+            FieldClass = FlowField;
+            CalcFormula = lookup(TDSpostinggroup.Name where(Code = field(Code)));
+
+
         }
 
         field(3; "TDS Rate"; Decimal)
